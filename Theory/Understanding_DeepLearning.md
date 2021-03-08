@@ -10,6 +10,7 @@
 ### 하드 코딩한 기준마저 스스로 찾아내게 하고 싶다.
 
 ![image](https://user-images.githubusercontent.com/79196616/110336963-bbc2ec00-8068-11eb-9dcd-b02f8dc5a437.png)
+
 사과의 크기로 사과의 익은 정도를 측정했을 때 익지 않은 사과가 기준보다 큰 경우
 간단하게 기준을 옮기면 된다. (더 큰쪽으로)
 
@@ -46,6 +47,7 @@
 ## 선으로 구분된 영역
 ![image](https://user-images.githubusercontent.com/79196616/110337393-3be95180-8069-11eb-972f-7e65be3e21c4.png)
 ![image](https://user-images.githubusercontent.com/79196616/110337559-64714b80-8069-11eb-9ba2-338a7d0eb892.png)
+
 크기정도와 색깔정도의 합이 3.5 이상이면 익은 것으로 판별한다.
 
 기준을 찾는 다는 건 `선을 표현하는 w1, w2, b를 찾는것.`
@@ -62,6 +64,7 @@
 
 ## 선조정 필요
 ![image](https://user-images.githubusercontent.com/79196616/110338881-df873180-806a-11eb-924c-e04d8034e927.png)
+
 - 여기서 우리의 목적: w1, w2, b의 값을 조정하여 좌번의 결과가 0보다 작은 값이 되도록 만들어야 한다.
 
 19:00 stop
