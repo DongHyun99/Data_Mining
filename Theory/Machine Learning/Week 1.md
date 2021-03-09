@@ -16,7 +16,7 @@ Supervised learning and Unsupervised learning.
 
 # Supervised Learning (지도 학습)
 
-##Supervised Learning
+## Supervised Learning
 
 In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
 **Supervised learning problems are categorized into "regression" and "classification" problems.** In a regression problem, we are trying to predict results within a continuous output, meaning that **we are trying to map input variables to some continuous function.** In a classification problem, we are instead trying to predict results in a discrete output. In other words, **we are trying to map input variables into discrete categories.**
@@ -30,8 +30,8 @@ We could turn this example into a classification problem by instead making our o
 (b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign. 
 
 지도 학습: 데이터로부터 하나의 함수를 유추하기 위한 기계 학습 (회귀 문제, 분류 문제)
-	- 회귀 문제: 연속된 출력 내에서 결과를 예측 ex) 가격
-	- 분류 문제: 이산적인 범주 내에서 결과를 예측 ex) Yes or No
+- 회귀 문제: 연속된 출력 내에서 결과를 예측 ex) 가격
+- 분류 문제: 이산적인 범주 내에서 결과를 예측 ex) Yes or No
   
 # Unsupervised Learning (비지도 학습)
 
@@ -46,3 +46,16 @@ Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in 
 
 비지도 학습: 함수와 같은 구조를 유추하지 못할 때 사용 하는 기계 학습
 - 데이터의 변수들 사이의 관계를 clustering하여 구조 추출, 결과의 예측보단 그룹을 나눠서 유형을 정하는 기법 (clustering: 그룹으로 묶기)
+
+# Model and Cost Function
+
+## Model Representation
+
+To establish notation for future use, we’ll use x^(i) to denote the “input” variables (living area in this example), also called input features, and y^(i) to denote the “output” or target variable that we are trying to predict (price). 
+A pair (x^(i) , y^(i)) is called a training example, and the dataset that we’ll be using to learn—a list of m training examples {(x^{(i)} , y^{(i)} ); i = 1, . . . , m—is called a training set. Note that the superscript “(i)” in the notation is simply an index into the training set, and has nothing to do with exponentiation. We will also use X to denote the space of input values, and Y to denote the space of output values. In this example, X = Y = ℝ.
+
+To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:
+
+![image](https://user-images.githubusercontent.com/79196616/110484329-e6c34380-812d-11eb-9cf9-8bbf2bce50ba.png)
+
+When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.
