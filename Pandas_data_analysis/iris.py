@@ -1,21 +1,22 @@
-# C:\Users\mpoli\Desktop\Git\pandas
+# C:\Users\mpoli\Desktop\Git\Deeplearning\Pandas_data_analysis
 import urllib.request as req # 웹에서 다운로드 할 때
 import matplotlib.pyplot as plt # 그래프
 import pandas as pd
 import os
 
 DOWNLOAD_ROOT = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
-IRIS_PATH = os.path.join('data') # 데이터 저장 폴더
+DATA_PATH = os.path.join('data') # 데이터 저장 폴더
 ColumnList = ['sepal length (cm)','sepal width (cm)', 'petal length (cm)', 'petal width (cm)', 'class'] # iris 데이터의 Column List
 
 def fetch_iris_data(): # data 폴더와 iris의 데이터 csv 파일 생성
-    if not os.path.isdir(IRIS_PATH):
-        os.makedirs(IRIS_PATH)
-    csv_path = os.path.join(IRIS_PATH,'iris.csv')
-    req.urlretrieve(DOWNLOAD_ROOT, csv_path)
+    if not os.path.isdir(DATA_PATH):
+        os.makedirs(DATA_PATH)
+    csv_path = os.path.join(DATA_PATH,'iris.csv')
+    if not os.path.isfile(csv_path):
+        req.urlretrieve(DOWNLOAD_ROOT, csv_path)
 
 def load_iris_data(): # iris data의 csv파일을 return하는 함수
-    csv_path = os.path.join(IRIS_PATH,'iris.csv')
+    csv_path = os.path.join(DATA_PATH,'iris.csv')
     return pd.read_csv(csv_path, names=ColumnList)
 
 fetch_iris_data()
