@@ -59,3 +59,20 @@ To describe the supervised learning problem slightly more formally, our goal is,
 ![image](https://user-images.githubusercontent.com/79196616/110484329-e6c34380-812d-11eb-9cf9-8bbf2bce50ba.png)
 
 When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.
+
+
+![image](https://user-images.githubusercontent.com/79196616/111905884-4c4df300-8a91-11eb-82c1-ab481f325cd5.png)
+
+- m: 학습 예제의 수
+- x: 종종 특징(feature)이라고 부르는 입력 변수를 표시하기 위해 사용
+- y: 출력값이나 예측하려하는 목표변수를 표기하는데 사용
+- (x, y)는 하나의 학습예제를 표기하는데 사용, (x(i), y(i))는 i번째 학습예제를 의미  
+
+![image](https://user-images.githubusercontent.com/79196616/111906130-705e0400-8a92-11eb-8c60-62ff515b3f88.png)
+
+결과값(가설) -> x 값으로 입력 받은 것을 y로 바꾸는데에 사용하는 지도   
+h를 표현하는 방법
+
+h(x)를 통해서 x의 직선 함수인 y를 예측   
+선형회귀:  선형회귀의 값은 하나이며 이값은 x이다. 하나의 값 x로 모든 가격을 예측한다.   
+  -> 다른말로 단일변량 선형 회귀라 한다. (단일변량은 하나의 값이라는 뜻이다.)
