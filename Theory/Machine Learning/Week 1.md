@@ -84,3 +84,6 @@ We can measure the accuracy of our hypothesis function by using a cost function.
 ![image](https://user-images.githubusercontent.com/79196616/112155262-784fac80-8c28-11eb-8b1e-c92bf1c07422.png)
 
 ![image](https://user-images.githubusercontent.com/79196616/112155285-7e458d80-8c28-11eb-8689-474cda40ca0c.png)
+
+h(x) = θ0 +θ1x 이고 여기서 최소값은 두함수의 차의 제곱을 각 training exampls의 값 마다 더해주는 것과 같다.
+최소화 및 보기 쉽게 하기위해 1/2m을 해주고 이를 J라는 최소화 함수로 정의 할 수 있다.
