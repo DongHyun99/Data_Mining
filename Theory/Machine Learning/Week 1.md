@@ -76,3 +76,11 @@ h를 표현하는 방법
 h(x)를 통해서 x의 직선 함수인 y를 예측   
 선형회귀:  선형회귀의 값은 하나이며 이값은 x이다. 하나의 값 x로 모든 가격을 예측한다.   
   -> 다른말로 단일변량 선형 회귀라 한다. (단일변량은 하나의 값이라는 뜻이다.)
+
+# Cost Function (비용 함수)
+
+We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's and the actual output y's.   
+
+![image](https://user-images.githubusercontent.com/79196616/112155262-784fac80-8c28-11eb-8b1e-c92bf1c07422.png)
+
+![image](https://user-images.githubusercontent.com/79196616/112155285-7e458d80-8c28-11eb-8689-474cda40ca0c.png)
