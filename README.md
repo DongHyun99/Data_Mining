@@ -6,8 +6,8 @@
 
   - week3 ```evaluation (closstab), data normalization (pre-processing)```
 
-  - week4 ```DBCSN / HCA```
+  - week4 ```DBCSN / HCA, Silhouette Method```
 
-  - week5 ```t-SNE / RAND INDEX, mutal information (normalized)```
+  - week5 ```t-SNE / RAND INDEX, mutual information (normalized)```
 
   - week6 ```convert numeric to categorical / naive Bayes classification, cross-validation```
