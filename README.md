@@ -12,4 +12,4 @@
 
   - week6 ```convert numeric to categorical / naive Bayes classification, cross-validation```
 
-  - week7 ```not categorical, data scaler / decision tree, k-fold
+  - week7 ```not categorical, data scaler / decision tree, k-fold```
