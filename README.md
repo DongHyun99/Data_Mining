@@ -13,3 +13,5 @@
   - week6 ```convert numeric to categorical / naive Bayes classification, cross-validation```
 
   - week7 ```not categorical, data scaler / decision tree, k-fold```
+
+  - week8 ```boxplot, log scale, outlier, anomaly detection, zoo data / bagging, boosting, random forest```
