@@ -14,4 +14,4 @@
 
   - week7 ```not categorical, data scaler / decision tree, k-fold```
 
-  - week8 ```boxplot, log scale, outlier, anomaly detection, zoo data / bagging, boosting, random forest```
+  - week8 ```boxplot, log scale, (outlier, anomaly) detection, zoo data / bagging, boosting, random forest```
